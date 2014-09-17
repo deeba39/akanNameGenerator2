@@ -1,1 +1,16 @@
-<p>This is the partial for view 1.</p>
+
+<div ng-controller="View1Ctrl">
+
+
+<h4 align="center">This is an Akan Name Generator.</h4>
+
+<table align="center" border=1 background-color="blue"><tr><td>
+	<p>Enter your date of birth: <input align="center" type="text" ng-model="Obj.dayOfBirth">{{Obj.dayOfBirth}}</p></td><tr>
+<tr><td>Your Akan Name is:<input align="center" type="text" value={{Obj|filterakanName}} ></td></tr>
+<tr><td><fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+<!-- <fb:login-button autologoutlink="true" perms="user_likes" size="large"></fb:login-button> --></td>
+<td><a align ="left"href="#" onclick='Logout()'>Logout</a></td></tr>
+</table>
+<div id="status" align="center">
+</div>
+</div>
