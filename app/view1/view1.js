@@ -1,5 +1,9 @@
 'use strict';
 
+
+
+
+
 var s=angular.module('myApp.view1', ['ngRoute'])
  var genderFrmFab =""; 
 
